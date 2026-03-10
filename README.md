@@ -5,37 +5,13 @@
 
 ## Pipeline Architecture
 
-CSV Dataset
-    ↓
-Python Ingestion Script
-    ↓
-Docker Container
-    ↓
-PostgreSQL Database
-
-This project demonstrates a **containerized data ingestion pipeline** built with Python, Docker, and PostgreSQL.
-
-The pipeline reads an e-commerce transaction dataset (CSV), performs basic data cleaning, and loads the processed data into a PostgreSQL database for further analysis.
-
-This project showcases core **data engineering concepts** such as:
-
-* Data ingestion
-* Containerization
-* Service orchestration
-* Database loading
-* Basic data quality checks
-
----
-
-## Pipeline Architecture
-
 ```
 CSV Dataset
-     ↓
+    ↓
 Python Ingestion Script
-     ↓
+    ↓
 Docker Container
-     ↓
+    ↓
 PostgreSQL Database
 ```
 

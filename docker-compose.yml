@@ -1,0 +1,14 @@
+services:
+  pgdatabase:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: kenan
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: ecommerce
+    ports:
+      - "5432:5432"      
+
+  ingestion_app:
+    build: .
+    depends_on:
+      - pgdatabase

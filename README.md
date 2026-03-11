@@ -2,6 +2,9 @@
 
 ## Overview
 
+This project demonstrates a simple containerized data ingestion pipeline built with Docker, Python, and PostgreSQL.  
+Retail transaction data is extracted from a CSV file, processed using pandas, and loaded into PostgreSQL for downstream analytics.
+
 
 ## Pipeline Architecture
 

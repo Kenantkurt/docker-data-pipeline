@@ -10,12 +10,18 @@ Retail transaction data is extracted from a CSV file, processed using pandas, an
 
 ```
 CSV Dataset
-    ↓
-Python Ingestion Script
-    ↓
+     │
+     ▼
+Python Ingestion Script (pandas)
+     │
+     ▼
 Docker Container
-    ↓
+     │
+     ▼
 PostgreSQL Database
+     │
+     ▼
+SQL Queries / Analytics
 ```
 
 The ingestion process performs the following steps:
@@ -95,3 +101,12 @@ ORDER BY SUM(quantity) DESC;
 ## Purpose of the Project
 
 This project was built as a **data engineering practice project** to demonstrate how to build a simple containerized ingestion pipeline using Docker and PostgreSQL.
+
+---
+
+## Future Improvements
+
+• Add Airflow orchestration  
+• Implement incremental data ingestion  
+• Add data validation checks  
+• Deploy the pipeline to a cloud environment (GCP or AWS)
